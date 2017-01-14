@@ -1,0 +1,23 @@
+Tiedostojen rakenne ja pelin toiminta:
+
+ajajat.txt.csv - sisältää kilpailuun oikeasti tulevat kuskit tietoineen #-merkein eroteltuina
+dbConn.php - avaa yhteyden tietokantaan, sisältää oleelliset salasanat, muut tiedostot kutsuvat tätä
+fillariStyle.css - verkkosivujen tyylitiedosto
+haeKuski.php - poistettava turha tiedosto
+kaikki.php - hakee ja tulostaa kaikkien kilpailussa mukana olevien joukkueiden tiedot
+kirjaudu.html - kirjautumissivu, avaussivu
+kirjaudu.php - käsittelee kirjaudu.html formin tiedot, luo sessio-kontrollin
+lisaaKuskeja.php - pyytää lisämään puuttuvat kuskit joukkueeseen
+lisaaKuski.php - käsittelee valitseKuski.php formin tiedot
+lisays.php - käsittelee lisaaKuskeja.php formin tiedot
+logout.php - kirjaa ulos, lopettaa session
+lueKuskitTietokantaan.php - lukee kuskien tiedot ajajat.txt.csv -tiedostosta ja täyttää Kuskit -tietokannan, tietokantaan on pitänyt jo luoda oikeanlainen tietokanta
+ohjeet.php - tulostaa pelin ohjeet
+omaJoukkue.php - hakee oman joukkueen tiedot, muut tiedostot kutsuvat tätä
+poista.php - käsittelee poistaKuski.php formin tiedot
+poistaKuski.php - pyytää poistamaan halutut kuskit
+pvm.php - hakee voimassaolevan etapin tiedot nykyisen ajankohdan perusteella, muut tiedostot kutsuvat tätä
+rakenneJaOhjeet - tämä tiedosto
+register.html - käyttäjätunnuksen ja joukkueen rekisteröinti ohjelmaan
+register.php - käsittelee register.html formin tiedot, luo sessio-kontrollin
+valitseKuski.php - pyytää lisäämään joukkueeseen ensimmäiset kuskit, vain kirjaudu.php ja register.php ohjaavat heti tänne, pelaajan on siis valittava heti ensimmäiset kuskinsa
